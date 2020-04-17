@@ -1,9 +1,9 @@
 clc;
 clear all;
 close all;
-N=512;
+N=1024;
 wo=N/2;
-dpix=2*10^-6;
+dpix=4.4*10^-6;
 lambda=0.0633*10^-9;
 k=2*pi/lambda;
 d=0.4;
@@ -20,7 +20,7 @@ nn=1;
 vari=10^-2;
 noise=randn(N).*sqrt(vari);
 
-fm=38*10^3;
+fm=14.2*10^3;
 m=0.5;
 a=0.5;
 
@@ -43,7 +43,7 @@ axis on
 title(['W']);
 
 
-P = imread('Lena.png');
+P = imread('image2.jpg');
 P=rgb2gray(P);
 P = double(P);
 P=rescale(P,-2.6,2.6);
