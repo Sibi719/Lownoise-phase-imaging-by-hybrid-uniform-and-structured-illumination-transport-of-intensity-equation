@@ -17,7 +17,7 @@ v=(-N/2:N/2-1)*df;
 [U,V]=meshgrid(u,v);
 freq_sq=U.^2+V.^2;
 nn=1;
-vari=10^-2;
+vari=10^-4;
 noise=randn(N).*sqrt(vari);
 
 fm=14.2*10^3;
